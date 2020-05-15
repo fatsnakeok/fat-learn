@@ -1,2 +1,16 @@
 server:
   port: 8081
+
+spring:
+  application:
+    name: dubbo-registry-nacos-consumer-sample
+
+nacos:
+  host: 127.0.0.1
+  port: 8848
+  username: nacos
+  password: nacos
+
+dubbo:
+  registry:
+    address: nacos://${nacos.host}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}

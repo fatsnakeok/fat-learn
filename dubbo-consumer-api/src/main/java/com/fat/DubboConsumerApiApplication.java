@@ -1,13 +1,13 @@
-package com.fat.learn;
+package com.fat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FatDubboConsumerApplication {
+public class DubboConsumerApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FatDubboConsumerApplication.class, args);
+        SpringApplication.run(DubboConsumerApiApplication.class, args);
     }
 
 }

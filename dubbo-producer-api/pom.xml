@@ -8,10 +8,10 @@
         <version>2.2.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.fat.learn</groupId>
-    <artifactId>fat-dubbo-consumer</artifactId>
+    <groupId>com.fat</groupId>
+    <artifactId>dubbo-producer-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>fat-dubbo-consumer</name>
+    <name>dubbo-producer-api</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -25,26 +25,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--指定Maven用什么编码来呈现 -->
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <revision>2.7.6</revision>
-        <nacos.client.version>1.2.1</nacos.client.version>
-        <dubbo.registry.nacos>2.7.6</dubbo.registry.nacos>
-        <dubbo.producer.api.version>0.0.1-SNAPSHOT</dubbo.producer.api.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -66,22 +54,6 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo-registry-nacos</artifactId>
-            <version>${dubbo.registry.nacos}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.nacos</groupId>
-            <artifactId>nacos-client</artifactId>
-            <version>${nacos.client.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fat</groupId>
-            <artifactId>dubbo-producer-api</artifactId>
-            <version>${dubbo.producer.api.version}</version>
         </dependency>
     </dependencies>
 
@@ -113,5 +85,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
