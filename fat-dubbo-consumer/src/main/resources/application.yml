@@ -4,10 +4,10 @@ server:
 spring:
   application:
     name: dubbo-registry-nacos-consumer-sample
-#    cloud:
-#      nacos:
-#        config:
-#          file-extension:yml
+  cloud:
+    nacos:
+      config:
+       file-extension: yml
 # spring.cloud.nacos.config.file-extension=yml
 nacos1:
   host: 127.0.0.1

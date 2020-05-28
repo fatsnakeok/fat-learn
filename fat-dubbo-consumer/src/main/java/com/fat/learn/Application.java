@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @ImportResource(locations = {"classpath:dubbo-consumer.xml"})
-@NacosPropertySource(dataId = "base1", autoRefreshed = true)
+@NacosPropertySource(dataId = "base", autoRefreshed = true)
 public class Application {
 
     public static void main(String[] args) {

@@ -15,6 +15,6 @@ import org.springframework.stereotype.Component;
 @Data
 public class ConfigService {
 
-    @NacosValue(value = "${lang:cn}", autoRefreshed = true)
+    @NacosValue(value = "${use.lang}", autoRefreshed = true)
     private String lang;
 }
