@@ -26,3 +26,8 @@ dubbo:
     address: nacos://${nacos1.host}:${nacos1.port}/?username=${nacos1.username}&password=${nacos1.password},nacos://${nacos1.host}:${nacos1.port}/?username=${nacos1.username}&password=${nacos1.password},nacos://${nacos1.host}:${nacos1.port}/?username=${nacos1.username}&password=${nacos1.password}
     protocol: dubbo
     port: 20880
+
+nacos:
+  config:
+    server-addr: ${nacos1.host}:${nacos1.port},${nacos2.host}:${nacos2.port},${nacos3.host}:${nacos3.port}
+

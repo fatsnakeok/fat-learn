@@ -29,6 +29,8 @@
         <nacos.client.version>1.2.1</nacos.client.version>
         <dubbo.registry.nacos>2.7.6</dubbo.registry.nacos>
         <dubbo.producer.api.version>0.0.1-SNAPSHOT</dubbo.producer.api.version>
+        <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
+        <spring-context-support.version>1.0.6</spring-context-support.version>
     </properties>
 
     <dependencies>
@@ -79,9 +81,28 @@
             <version>${nacos.client.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-starter</artifactId>
+            <version>${nacos-config-spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-actuator</artifactId>
+            <version>${nacos-config-spring-boot.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.fat</groupId>
             <artifactId>dubbo-producer-api</artifactId>
             <version>${dubbo.producer.api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.spring</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring-context-support.version}</version>
         </dependency>
     </dependencies>
 

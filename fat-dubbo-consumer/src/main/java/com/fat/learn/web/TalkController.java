@@ -1,5 +1,6 @@
 package com.fat.learn.web;
 
+import com.fat.learn.config.ConfigService;
 import com.fat.learn.interfaces.ITalkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +20,14 @@ public class TalkController {
     @Autowired
     private ITalkService talkService;
 
+    @Autowired
+    private ConfigService configService;
+
     @GetMapping
     public String sayHello() {
-        return talkService.sayHello("张三");
+
+        String str = "张三用" + configService.getLang() + "打招呼了";
+
+        return talkService.sayHello(str);
     }
 }
